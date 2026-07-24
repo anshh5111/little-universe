@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Little Universe ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="overlay"></div>
+
+    <div class="hearts">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="petals">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="container">
+
+        <div class="glass">
+
+            <div class="lock">
+                🔒
+            </div>
+
+            <h1>
+                Our Little Universe
+            </h1>
+
+            <p class="subtitle">
+                Every beautiful journey begins with a tiny secret...
+            </p>
+
+            <div class="question">
+
+                <h2>
+                    Which name have I made your permanent nickname?
+                </h2>
+
+            </div>
+
+            <div class="inputBox">
+
+                <input type="password" id="password" placeholder="Enter your answer..." autocomplete="off">
+
+            </div>
+
+            <button id="unlockBtn">
+
+                Unlock Our Universe ❤️
+
+            </button>
+
+            <p class="error" id="error">
+
+                Wrong answer...
+                Try again my love ❤️
+
+            </p>
+
+        </div>
+
+    </div>
+    <!-- Loading Screen -->
+
+    <div class="loading-screen" id="loadingScreen">
+
+        <div class="loader-card">
+
+            <h2>Preparing Something Special...</h2>
+
+            <div class="progress">
+
+                <div class="progress-bar" id="progressBar"></div>
+
+            </div>
+
+            <div class="loading-list">
+
+                <p id="step1">🤍 Collecting our memories...</p>
+
+                <p id="step2">📸 Loading our favorite moments...</p>
+
+                <p id="step3">✨ Adding a little magic...</p>
+
+                <p id="step4">💖 Almost Ready...</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Transition Screen -->
+
+    <div class="transition" id="transition">
+
+        <h2>Welcome</h2>
+
+        <h1>To Our Little Universe ❤️</h1>
+
+        <p>
+
+            Happy 1.5 Years Love ❤️
+
+            <br><br>
+
+            This little world was made just for you...
+
+        </p>
+
+        <button id="beginJourney">
+
+            Begin Our Journey
+
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+window.addEventListener("beforeunload", () => {
+    localStorage.removeItem("universeUnlocked");
+});
+</script>
+
+</body>
+
+</html>
